@@ -7,7 +7,7 @@ import numpy as np
 
 
 def load_model():
-    model = tf.keras.models.load_model('EfficientNetB0.hdf5')
+    model = tf.keras.models.load_model('EfficientNetB0.hdf5', custom_objects={'KerasLayer':hub.KerasLayer})
     return model
 
 
