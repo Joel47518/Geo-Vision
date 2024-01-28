@@ -47,7 +47,7 @@ def prediction(model, img, class_names):
     return pred_class
 
 
-st.title('RockID App')
+st.title('GEO-VISION')
 
 uploaded_file = st.sidebar.file_uploader('Upload Image')
 
