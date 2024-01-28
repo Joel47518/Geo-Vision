@@ -7,7 +7,7 @@ import numpy as np
 
 
 def load_model():
-    model = tf.keras.models.load_model('CNN.hdf5')
+    model = tf.keras.models.load_model('EfficientNetB0.hdf5')
     return model
 
 
@@ -54,7 +54,7 @@ st.sidebar.divider()
 
 pred_button = st.sidebar.button("Predict", type='primary')
 
-class_names = ['Shale', 'schist', 'Conglomerate', 'Quartz_diorite', 'Quartzite', 'Limestone', 'Gneiss', 'Sandstone', 'Coal', 'Gabbro', 'Andesite', 'Amphibolite', 'Breccia', 'Basalt']
+class_names = ['Amphibolite', 'Andesite', 'Basalt', 'Breccia', 'Coal', 'Conglomerate', 'Gabbro', 'Gneiss', 'Limestone', 'Quartz_diorite', 'Quartzite', 'Sandstone', 'Shale', 'schist']
 
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
