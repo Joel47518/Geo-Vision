@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import io
 import numpy as np
+import tensorflow_hub as hub
 
 
 def load_model():
